@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mytest1</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+
+        
+
+        body {
+            background-color: #efefef;
+            color: #393939;
+        }
+
+        * {
+            margin: 0;
+            font-family: 'Raleway';
+        }
+
+        #container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .alert {
+            padding: 8px;
+            margin-bottom: 12px;
+
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 10px 10px -4px rgba(0,0,0,0.1);
+        }
+
+        .alert_container {
+            display: flex;
+
+        }
+
+
+        .alert__container::before {
+            position: absolute;
+            content: "";
+            min-width: 6px;
+            background-color: #0090d7;
+            border-radius: 50px;
+        }
+        .danger .alert__container::before {
+            background-color: #d20d38;
+        }
+
+
+        .icon {
+            margin: 8px 20px;
+        }
+
+        .icon img {            
+            width: 20px;
+            height: 20px;
+        }
+
+        .alert_details {
+            padding: 12px 0;
+        }
+
+        .alert_details p {
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+        
+        .alert_details p:first-child {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        #container p {
+            margin-top: 40px;
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- section 是HTML5的新增标签。是具有语义化的分段标签 -->
+    <section id="container">
+        <h3>Info Alert</h3>
+
+    <div class="alert info">
+        <div class="alert_container">
+            <div class="icon">
+                <img src="images/01.png" alt="">
+            </div>
+            <div class="alert_details">
+                <p>Infor alert</p>
+                <p>Sed at rhoncus leo. Curabitur magna quam, aliquam ut diam sit amet, suscipit volutpat turpis.   </p>
+            </div>
+        </div>
+    </div>
+    <h3>Dark Alerts</h3>
+    <div class="alert danger">
+        <div class="alert_container">
+            <div class="icon">
+                <img src="images/02.png" alt="">
+            </div>
+            
+            <div class="alert_details">
+                <p>Danger alert</p>
+                <p>Sed at rhoncus let diam sit amet, suscipit volutpat turpis.</p>
+            </div>
+        </div>
+    </div>
+    <div class="alert warning">
+        <div class="alert_container">
+            <div class="icon">
+                <img src="images/03.png" alt="">
+            </div>
+            
+            <div class="alert_details">
+                <p>Warning title</p>
+                <p>Sed at rhoncus leo. Curabitur magna quam, aliquam ut diam sit ame.</p>
+            </div>
+        </div>
+    </div>
+    </section>
+</body>
+</html>
